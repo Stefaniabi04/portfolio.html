@@ -1,0 +1,240 @@
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    /* Black background for the page */
+    color: #ffffff;
+    /* White text color */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensures the footer stays at the bottom */
+    justify-content: flex-start;
+    /* Make sure the content is aligned to the top */
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    margin: 0;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    /* White text for links */
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    /* Add padding to create space around text */
+    display: block;
+    border-radius: 5px;
+    /* Optional: Rounded corners for the box */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Background Color for Navigation Links */
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #ff7f50;
+    /* Matching theme color (or another theme color) */
+    color: #000000;
+    /* Change text color when hovered or active */
+}
+
+nav ul li a:active {
+    background-color: #ff6347;
+    /* Slightly different color on active state */
+    color: #ffffff;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(45deg, #ff7f50, #ff6347, #ff1493, #8a2be2, #007bff);
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Optional: Add a shadow effect */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Main Content Styling */
+.main-content {
+    display: flex;
+    justify-content: center;
+    /* Horizontally center the content */
+    align-items: center;
+    /* Vertically center the content */
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #222;
+    color: white;
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    min-height: 60vh;
+    /* Ensure enough height for vertical centering */
+    border-radius: 10px;
+    /* Optional: add rounded corners to the content box */
+    position: absolute;
+    /* Positioning the box to the center of the page */
+    top: 50%;
+    /* Move the box to the vertical center */
+    left: 50%;
+    /* Move the box to the horizontal center */
+    transform: translate(-50%, -50%);
+    /* Adjust the box to be exactly centered */
+}
+
+/* Section Header Styling */
+section h2 {
+    font-size: 2rem;
+    color: #ff7f50;
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Resume Section Styling */
+.resume {
+    background-color: #222;
+    /* Matches project section */
+    color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    /* Subtle shadow for depth */
+}
+
+/* Resume Text Box */
+.resume h2,
+.resume h3,
+.resume p,
+.resume ul {
+    background-color: #333;
+    /* Dark background for the text box */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Light shadow for text boxes */
+}
+
+.resume h2 {
+    font-size: 1.8rem;
+    color: #ff7f50;
+    margin-bottom: 10px;
+}
+
+.resume h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.resume p,
+.resume li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+.resume ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Project List Styling */
+.projects-list article {
+    margin: 20px auto;
+    max-width: 80%;
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.projects-list h2 {
+    font-size: 1.8rem;
+    color: #ff7f50;
+}
+
+.projects-list p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.projects-list a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.projects-list a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(45deg, #ff7f50, #ff6347, #ff1493, #8a2be2, #007bff);
+    color: white;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin-top: auto;
+    /* Pushes the footer to the bottom of the page */
+}
+
+section {
+    padding: 40px;
+    margin: 20px 0;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+}
+
+#home {
+    background-color: #444;
+    /* A slightly different color for the home section */
+}
+
+#about {
+    background-color: #555;
+}
+
+#projects {
+    background-color: #666;
+}
+
+#resume {
+    background-color: #777;
+}
